@@ -1,0 +1,79 @@
+.timeline {
+  margin: 4em auto 0 auto;
+  position: relative;
+  max-width: 46em;
+}
+.timeline::before {
+  background-color: black;
+  content: "";
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+}
+
+.timelineeventthumbnail {
+  transition: padding 0.5s;
+}
+
+.timelineevent {
+  position: relative;
+}
+
+.timelineevent:hover {
+  .timelineeventicon {
+    transform: rotate(-45deg);
+    background-color: #6366f1;
+  }
+
+  .timelineeventthumbnail {
+    box-shadow: inset 40em 0 0 0 #6366f1;
+    padding: 0 10px;
+  }
+}
+
+.timelineeventcopy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+}
+
+.timelineeventicon {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+
+  background-color: black;
+  outline: 10px solid white;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timelineevent-thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 0.75em;
+
+  background-color: black;
+  box-shadow: inset 0 0 0 0em #ef795a;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
+
+.rolesandresponsibilities {
+  list-style: outside;
+}
+
+.rolesandresponsibilities > li {
+  margin-left: 15px;
+  padding-left: 10px;
+}
